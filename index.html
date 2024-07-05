@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nursery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              roboto: ["Roboto", "sans-serif"],
+              playfairdisplay: ["Playfair Display", "sans-serif"],
+            },
+            colors: {
+              primary: "#02301A",
+              secondary: "#B27756",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <main>
+      <header
+        class="bg-cover bg-center"
+        style="
+          background-image: url('./image/pexels-photo-1407305\ DARKER\ 2.jpg');
+        "
+      >
+        <nav class="p-3">
+          <ul class="flex justify-around items-center list-none">
+            <li class="mx-2">
+              <a
+                href="#"
+                class="text-white font-roboto text-lg hover:underline cursor-pointer"
+                >Home</a
+              >
+            </li>
+            <li class="mx-2">
+              <a
+                href="#"
+                class="text-white font-roboto text-lg hover:underline cursor-pointer"
+                >Our Plants</a
+              >
+            </li>
+            <li class="mx-2">
+              <a href="#" class="logo"
+                ><img src="./image/demo-store-logo-1543322055.png" alt="logo"
+              /></a>
+            </li>
+            <li class="mx-2">
+              <a
+                href="#"
+                class="text-white font-roboto text-lg hover:underline cursor-pointer"
+                >Contact Us</a
+              >
+            </li>
+            <li class="mx-2">
+              <a
+                href="#"
+                class="text-white font-roboto text-lg hover:underline cursor-pointer"
+                >About</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <section class="hero text-center text-white p-36">
+          <h1 class="text-6xl mb-9 font-playfairdisplay font-bold italic">
+            Bloom Haven Nursery
+          </h1>
+          <p class="text-xl font-roboto">
+            Nurturing young minds with love and care, where every child
+            blossoms.
+          </p>
+          <p class="text-xl mb-12 font-roboto">
+            A playful and safe environment, fostering growth and discovery
+            everyday.
+          </p>
+          <button
+            class="text-xl font-roboto font-bold text-white border border-white py-2 px-4 rounded bg-white bg-opacity-20 bg-white text-primarywhite hover:bg-primary hover:text-white"
+          >
+            Continue
+          </button>
+        </section>
+      </header>
+      <section class="welcome p-8 bg-white">
+        <h2
+          class="text-4xl italic mb-8 ml-32 font-playfairdisplay font-bold italic text-primary"
+        >
+          Welcome to Nursery
+        </h2>
+        <p class="text-lg font-roboto leading-8 text-left mx-32">
+          We are Nursery, where nurturing young minds is our passion. We provide
+          a safe, loving, and stimulating environment for every child to grow
+          and thrive. Our experienced team blends play with learning to foster
+          curiosity, creativity, and confidence. Partnering closely with
+          families, we support each child’s journey, cultivating a love for
+          learning and a foundation for lifelong success.
+        </p>
+      </section>
+    </main>
+
+    <section class="section-info bg-secondary p-16">
+      <div
+        class="title font-playfairdisplay font-bold italic text-white text-4xl text-right pb-5"
+      >
+        Get inspired
+      </div>
+      <div
+        class="desc text-white font-roboto w-1/2 text-lg text-right float-right pb-5"
+      >
+        Nurture young minds with love and care, fostering creativity and
+        confidence.Join us in creating a vibrant foundation for lifelong
+        learning and success.
+      </div>
+      <div
+        class="info-images flex items-center justify-center gap-[4rem] w-full"
+      >
+        <figure>
+          <img src="image/pexels-shottrotter-2249959.png" alt="info image 1" />
+        </figure>
+        <figure>
+          <img src="image/pexels-photo-2959604.png" alt="info image 2" />
+        </figure>
+        <figure>
+          <img src="image/pexels-photo-1701535.png" alt="info image 3" />
+        </figure>
+      </div>
+    </section>
+    <section class="section-banner">
+      <div class="banner-info w-1/2 text-center float-left px-[5rem] py-[3rem]">
+        <div
+          class="title text-primary font-playfairdisplay text-4xl font-bold italic pb-8 italic"
+        >
+          Take care of your plant
+        </div>
+        <div class="desc text-lg">
+          Ensure your plants thrive with expert tips and care guides. From
+          watering schedules and soil recommendations to sunlight needs and pest
+          control, we provide all the information you need to keep your greenery
+          healthy and vibrant. Whether you're a beginner or a seasoned gardener,
+          our comprehensive resources and advice will help your plants flourish
+          year-round.
+        </div>
+        <button
+          type="submit"
+          class="border font-semibold hover:text-white py-1 px-4 mt-10 border rounded hover:bg-primary hover:text-white"
+        >
+          Shop now
+        </button>
+      </div>
+      <div class="banner-img w-1/2 float-left">
+        <figure>
+          <img src="image/pexels-photo-793012.jpg" alt="banner image" />
+        </figure>
+      </div>
+    </section>
+    <section
+      class="section-services w-full flex items-center p-[2rem] justify-between bg-primary"
+    >
+      <figure class="w-full float-left text-center">
+        <img
+          src="image/service-icon2.png"
+          class="inline"
+          alt="service image 1"
+        />
+        <figcaption
+          class="service-title font-roboto italic mt-2 font-medium text-lg text-white"
+        >
+          Quick shipping on the same day
+        </figcaption>
+      </figure>
+      <figure class="w-full float-left text-center">
+        <img
+          src="image/service-icon4.png"
+          class="inline"
+          alt="service image 2"
+        />
+        <figcaption
+          class="service-title font-roboto italic mt-2 font-medium text-lg text-white"
+        >
+          Tips for your plants
+        </figcaption>
+      </figure>
+      <div class="service-title"></div>
+      <figure class="w-full float-left text-center">
+        <img
+          src="image/service-icon3.png"
+          class="inline"
+          alt="service image 3"
+        />
+        <figcaption
+          class="service-title font-roboto italic mt-2 font-medium text-lg text-white"
+        >
+          Eco-friendly Shipping
+        </figcaption>
+      </figure>
+    </section>
+    <div class="relative h-[650px]">
+      <div
+        class="absolute bg-fixed bg-cover bg-center h-full w-full"
+        style="
+          background-image: url(./image/pexels-kseniachernaya-11741414.jpg);
+        "
+      ></div>
+      <div
+        class="relative text-right bg-white p-8 ml-auto max-h-[650px] max-w-[650px] overflow-hidden top-1/2 -translate-y-1/2 right-10"
+      >
+        <h2
+          class="text-4xl text-primary font-playfairdisplay font-extrabold italic mb-4"
+        >
+          Planting Guide
+        </h2>
+        <p class="font-roboto pt-4 text-lg">
+          Transform your space into a lush oasis with our comprehensive planting
+          guide. Learn the best practices for selecting the right plants,
+          preparing your soil, and ensuring proper planting techniques. From
+          seeds to mature plants, we provide step-by-step instructions to help
+          you cultivate a thriving garden. Whether you're planting indoors or
+          outdoors, our expert advice will set you up for success and make your
+          gardening journey enjoyable and rewarding.
+        </p>
+        <button
+          class="rounded-lg border-2 px-4 py-1 mt-7 mb-4 text-lg hover:bg-primary hover:text-white"
+        >
+          Read More
+        </button>
+      </div>
+    </div>
+
+    <div class="ml-28 mt-20 pb-10 text-primary">
+      <h2 class="text-4xl font-playfairdisplay italic">
+        Find the <span class="font-bold not-italic">plant</span> that is
+        <span class="font-bold not-italic">perfect for you</span>
+      </h2>
+      <p class="font-roboto w-1/2 mt-6">
+        Discover a diverse selection of plants curated to match every lifestyle
+        and preference. Whether you're a seasoned gardener or just starting your
+        green journey, our collection features the ideal plant to enhance your
+        home or office. From low-maintenance succulents to vibrant flowering
+        species, each plant is chosen for its unique beauty and ease of care.
+        Let us help you find the perfect botanical companion that suits your
+        space and nurtures your love for nature.
+      </p>
+    </div>
+    <div class="flex justify-between flex-wrap mx-28">
+      <div>
+        <img
+          src="./image/Baby Plants.jpg"
+          alt="Image for Small Plants"
+          class="max-h-48"
+        />
+        <h4 class="text-center font-roboto p-4">
+          <a href="#" class="hover:underline">Small Plants</a>
+        </h4>
+      </div>
+      <div>
+        <img
+          src="./image/Medium Plants.jpg"
+          alt="Image for Medium Plants"
+          class="max-h-48"
+        />
+        <h4 class="text-center font-roboto p-4">
+          <a href="#" class="hover:underline">Medium Plants</a>
+        </h4>
+      </div>
+      <div>
+        <img
+          src="./image/Big plants.jpg"
+          alt="Image for Large Plants"
+          class="max-h-48"
+        />
+        <h4 class="text-center font-roboto p-4">
+          <a href="#" class="hover:underline">Large Plants</a>
+        </h4>
+      </div>
+      <div>
+        <img
+          src="./image/Succulents.jpg"
+          alt="Image for Succulents"
+          class="max-h-48"
+        />
+        <h4 class="text-center font-roboto p-4">
+          <a href="#" class="hover:underline">Succulents</a>
+        </h4>
+      </div>
+      <div>
+        <img
+          src="./image/Hanging Plants.jpg"
+          alt="Image for Hanging Plants"
+          class="max-h-48"
+        />
+        <h4 class="text-center font-roboto p-4">
+          <a href="#" class="hover:underline">Hanging Plants</a>
+        </h4>
+      </div>
+    </div>
+    <div class="mt-8 mb-16 flex justify-end mr-28">
+      <button
+        class="font-roboto rounded-lg border-2 px-4 py-1 text-lg hover:bg-primary hover:text-white"
+      >
+        Shop Here
+      </button>
+    </div>
+
+    <div class="bg-primary w-full pt-10 pb-7">
+      <div class="flex justify-between flex-wrap mx-16">
+        <div class="flex gap-14">
+          <img
+            src="./image/demo-store-logo-1543322055.png"
+            alt="Nursery Logo"
+            class="h-10"
+          />
+          <div class="flex flex-col gap-3 text-white">
+            <a href="#" class="hover:underline">Home</a>
+            <a href="#" class="hover:underline">Feautures</a>
+            <a href="#" class="hover:underline">Products</a>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex flex-row gap-5">
+            <a href="#"
+              ><img src="./image/Facebook.png" alt="Facebook" class="h-6"
+            /></a>
+            <a href="#"
+              ><img src="./image/Instagran.png" alt="Instagram" class="h-6"
+            /></a>
+            <a href="#"
+              ><img src="./image/Pinterest.png" alt="Pinterest" class="h-6"
+            /></a>
+          </div>
+          <div class="flex flex-col gap-5 text-white">
+            <span class="w-80 text-right"
+              >Feel free to contact us about any issue with your order or
+              question about your plant</span
+            >
+            <div class="flex justify-end">
+              <button
+                class="font-roboto rounded-3xl border-white border-2 px-3 py-2 bg-white text-primary w-28 hover:border-white hover:bg-primary hover:text-white"
+              >
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center mt-16">
+        <span class="font-roboto text-sm italic text-white"
+          >@2024 - Nursery.com</span
+        >
+      </div>
+    </div>
+  </body>
+</html>
